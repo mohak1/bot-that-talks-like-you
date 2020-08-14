@@ -8,7 +8,6 @@ import torch.nn.functional as F
 
 
 CUDA = torch.cuda.is_available()
-print(CUDA)
 if CUDA:
     device = torch.device('cuda')
 else:
