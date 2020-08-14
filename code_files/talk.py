@@ -9,7 +9,9 @@ import torch.nn as nn
 import os 
 
 #load the model
-LOAD_MODEL_PATH = '/home/mohak/Music/chatbot/whatsapp_bot/'
+LOAD_MODEL_PATH = 'path_to_repository/whatsapp_bot/'
+
+#LOAD_MODEL_PATH = '/home/mohak/Music/chatbot/whatsapp_bot/'
 #find the most recent model checkpoint
 l = os.listdir(LOAD_MODEL_PATH)
 recent = 0

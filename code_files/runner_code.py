@@ -6,17 +6,17 @@ import model_classes
 from train import start_training
 import os
 
-#Path to the folder where chat backups are stored
-# CHAT_FOLDER = 'path_to_chats_backup_folder/whatsapp_chats/'
-# MASTER_FOLDER = 'path_to_repository/processed_chats/'
-# SAVE_MODEL = 'path_to_repository/'
-# YOUR_NAME = Your name as it appears in whatsapp settings
+#Path to be changed as suggested
+CHAT_FOLDER = 'path_to_repository/whatsapp_chats/'
+MASTER_FOLDER = 'path_to_repository/processed_chats/'
+SAVE_MODEL = 'path_to_repository/'
+YOUR_NAME = **Your name as it appears in whatsapp settings**
 
-CHAT_FOLDER = '/home/mohak/Music/chatbot/whatsapp_chats/'
-MASTER_FOLDER = '/home/mohak/Music/chatbot/processed_chats/'
-SAVE_MODEL = '/home/mohak/Music/chatbot/'
-LOAD_MODEL_PATH = SAVE_MODEL + 'whatsapp_bot/'
-YOUR_NAME = 'Mohak'
+# CHAT_FOLDER = '/home/mohak/Music/chatbot/whatsapp_chats/'
+# MASTER_FOLDER = '/home/mohak/Music/chatbot/processed_chats/'
+# SAVE_MODEL = '/home/mohak/Music/chatbot/'
+# LOAD_MODEL_PATH = SAVE_MODEL + 'whatsapp_bot/'
+# YOUR_NAME = 'Mohak'
 
 #find the most recent model checkpoint
 l = os.listdir(LOAD_MODEL_PATH)
