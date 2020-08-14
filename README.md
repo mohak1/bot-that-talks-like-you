@@ -1,5 +1,11 @@
 # A Bot that talks like you!
 
+[![OS](https://img.shields.io/badge/OS-Linux-1abb0c.svg)](https://shields.io/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.0.0-709DF6.svg)](https://shields.io/)
+[![Python](https://img.shields.io/badge/Python-3.6-E11E1E.svg)](https://shields.io/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 Like the name says, this project will help you create your own personal Bot which will respond to text messages just like you do and if you give it plenty of data and train it well enough, (hopefully) nobody would be able to tell the difference.
 
 Before diving deep into the installation and setup part, lets be uncover a few details about how this bot works. It adopts the 'Question & Answer' strategy in order to generate a response for the input text messages. During the training process, it makes use of your WhatsApp chat data and learns the way you respond to texts. It then mimics your sentence structure and vocabulary to reply to input texts. Under the hood, this bot works on a sequence-to-sequence (Seq2Seq) encoder-decoder model with attention mechanism which enables it to pay attention to certain parts of input text in order to generate relevant target response.
