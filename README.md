@@ -46,9 +46,11 @@ Create a new WhatsApp group with just one more member than yourself and give it 
 
 2.3 Download these chat backups from the group using WhatsApp web. Click on the three dots in the top right corner of the chat, choose 'Select messages' option, select the first chat backup file, scroll down to the last file, press and hold shift key and select the last chat backup. Download and extract these chats.
 
-3. Extract the chat backup files in the _whatsapp_chats_ folder. Since our data is ready, its time to set PATH variables such that they point to the correct folders.
+3. Remove the text files present in the _processed_chat_, whatsapp_bot and whatsapp_chats folders. These files were added to preserve the folder structure and may disturbe the execution of the code if not removed.
 
-4. Path variables are to be updated in order to start the training. 
+4. Extract the chat backup files in the _whatsapp_chats_ folder. Since our data is ready, its time to set PATH variables such that they point to the correct folders.
+
+5. Path variables are to be updated in order to start the training. 
 
 Go to the _runner_code.py_ file in the folder named: _code_files_ and update the path variables in lines 10-12. You should assign your whatsapp name to the variable in line 13. Save the file and exit. 
 
