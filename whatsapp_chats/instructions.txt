@@ -1,3 +1,0 @@
-All the chats should be extracted in this folder
-Delete this file before executing the code
-
