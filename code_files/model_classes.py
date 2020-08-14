@@ -7,7 +7,6 @@ import random
 import os 
 
 CUDA = torch.cuda.is_available()
-print(CUDA)
 if CUDA:
     device = torch.device('cuda')
 else:
