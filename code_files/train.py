@@ -74,8 +74,6 @@ def start_training(voc, trimmed_pairs, save_dir, load_model_path=None):
     n_iteration = 50000000
     print_every = 100
     save_every = 1000
-    #save_dir = '/content/'
-    #corpus_name = 'whatsapp_bot'
 
     # Ensure dropout layers are in train mode
     encoder.train()
