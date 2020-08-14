@@ -14,7 +14,7 @@ class Vocabulary:
         self.index2word = {self.PAD_token: 'PAD', self.START_token: 'START', self.END_token: 'END'}  #index is key, word is value
         self.num_of_words = 3   #denotes the total number of words in the vocabulary. Currently there are only 3: PAD, START, END
         self.keep_words = []   #list which keeps the words which have the frequency more than min_count
-        MIN_COUNT = 3   #used for rare words trimming
+        MIN_COUNT = 2   #used for rare words trimming
         self.min_count = MIN_COUNT
     
     def add_sentence(self, sentence):
