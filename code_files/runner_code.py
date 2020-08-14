@@ -11,17 +11,19 @@ CHAT_FOLDER = 'path_to_repository/whatsapp_chats/'
 MASTER_FOLDER = 'path_to_repository/processed_chats/'
 SAVE_MODEL = 'path_to_repository/'
 YOUR_NAME = **Your name as it appears in whatsapp settings**
+LOAD_MODEL_PATH = SAVE_MODEL + 'whatsapp_bot/'
 
 # CHAT_FOLDER = '/home/mohak/Music/chatbot/whatsapp_chats/'
 # MASTER_FOLDER = '/home/mohak/Music/chatbot/processed_chats/'
 # SAVE_MODEL = '/home/mohak/Music/chatbot/'
-# LOAD_MODEL_PATH = SAVE_MODEL + 'whatsapp_bot/'
 # YOUR_NAME = 'Mohak'
 
 #find the most recent model checkpoint
 l = os.listdir(LOAD_MODEL_PATH)
 recent = 0
 for i in l:
+    if '_checkpoint.tar' not in i:
+        continue
     i = i.strip('_checkpoint.tar')
     if int(i)>int(recent):
         recent = i
