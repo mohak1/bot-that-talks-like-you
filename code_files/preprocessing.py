@@ -15,6 +15,8 @@ class PreprocessChats:
     def __init__(self, CHAT_FOLDER, MASTER_FOLDER, YOUR_NAME, MAX_LENGTH):
         
         #Path to the folder where chat backups are stored
+        # You Are Not Required To Make Changes Or Un-Comment The Lines Below 
+
         # CHAT_FOLDER = 'path_to_chats_backup_folder/WhatsApp Unknown ####-##-## at ##.##.##/'
         # MASTER_FOLDER = 'path_to_repository/processed_chats/'
         # YOUR_NAME = Name that appears in your whatsapp (go to whatsapp settings for clarification)
