@@ -73,7 +73,7 @@ def start_training(voc, trimmed_pairs, save_dir, load_model_path=None):
     learning_rate = 0.00000001
     decoder_learning_ratio = 5.0
     n_iteration = 500000
-    print_every = 1000
+    print_every = 200
     save_every = 1000
 
     # Ensure dropout layers are in train mode
