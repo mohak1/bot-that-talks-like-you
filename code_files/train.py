@@ -13,6 +13,7 @@ if CUDA:
 else:
     device = torch.device('cpu')
 
+    
 
 def start_training(voc, trimmed_pairs, save_dir, load_model_path=None):
 
@@ -71,7 +72,7 @@ def start_training(voc, trimmed_pairs, save_dir, load_model_path=None):
     teacher_forcing_ratio = 0.5
     learning_rate = 0.000001
     decoder_learning_ratio = 5.0
-    n_iteration = 50000000
+    n_iteration = 300000
     print_every = 100
     save_every = 1000
 
