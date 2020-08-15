@@ -10,7 +10,7 @@ import os
 CHAT_FOLDER = 'path_to_repository/whatsapp_chats/'
 MASTER_FOLDER = 'path_to_repository/processed_chats/'
 SAVE_MODEL = 'path_to_repository/'
-YOUR_NAME = **Your name as it appears in whatsapp settings**
+YOUR_NAME = 'Your name as it appears in whatsapp settings'
 LOAD_MODEL_PATH = SAVE_MODEL + 'whatsapp_bot/'
 
 # CHAT_FOLDER = '/home/mohak/Music/chatbot/whatsapp_chats/'
@@ -37,7 +37,7 @@ MAX_LENGTH = 20
 
 process = PreprocessChats(CHAT_FOLDER, MASTER_FOLDER, YOUR_NAME, MAX_LENGTH)
 
-if len(os.listdir(MASTER_FOLDER))<1:
+if len(os.listdir(MASTER_FOLDER))<2:
     #the folder is empty, chats have not been processed
     process.chat_rename()
     process.remove_auto_messages()
