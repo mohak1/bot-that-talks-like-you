@@ -18,6 +18,15 @@ LOAD_MODEL_PATH = SAVE_MODEL + 'whatsapp_bot/'
 # SAVE_MODEL = '/home/mohak/Music/chatbot/'
 # YOUR_NAME = 'Mohak'
 
+#delete the 'to be removed.txt' files
+try:
+    file = 'to be removed.txt'
+    os.remove(MASTER_FOLDER+file)
+    os.remove(CHAT_FOLDER+file)
+    os.remove(LOAD_MODEL_PATH+file)
+except:
+    pass
+
 #find the most recent model checkpoint
 l = os.listdir(LOAD_MODEL_PATH)
 recent = 0
