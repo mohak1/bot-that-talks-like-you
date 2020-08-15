@@ -12,7 +12,7 @@ Before diving deep into the installation and setup part, lets be uncover a few d
 
 It is worth mentioning that the resultant chatbot would be as good as the training data provided to it. Since our bot assumes the data to be in Q&A format, we arrange the WhatsApp chats and create question-response pairs for training. To increase the effectiveness of the bot, it is recommended to manually re-arrange the chats before you begin the training process(more on this later).
 
-_**Note:** This project was developed and tested on a Linux system and I assume that you are using a Linux distribution as well. The code might require major changes for it to work on Windows or MacOS._
+_**Note:** This project was developed and tested on a Linux system and I assume that you are using a Linux distribution as well. The code might require major changes for it to work on Windows or MacOS. Use the colab file (ready_for_execution.ipynb) if you're not on a linux system or do not have enough resources for training the model. _ 
 
 ## Setting it up
 
