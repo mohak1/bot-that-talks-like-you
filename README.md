@@ -65,9 +65,11 @@ In the terminal, CD to the directory named _code_files_, type the following and 
 ```bash
 python runner_code.py
 ```
-The training should take a couple of hours so sit back and relax. The trained model checkpoints are stored in the _whatsapp_bot_ folder. Keep track of the training loss and end the training by pressing Ctrl + C in the terminal when the loss drops below zero. The maximum number of iterations are set to 5 Million (and can be toggled by changing line 75 in train.py) but the model should get trained well before reaching 5 Million iterations. The model assumes the text to be in question-response format so to make it more efficient, altering the chats such that your texts are a response to the other persons text would help the model extract a lot of information and train better. This altering of chat should be done before executing the runner_code.py file.
+The training should take a couple of hours so sit back and relax. The trained model checkpoints are stored in the _whatsapp_bot_ folder. Keep track of the training loss and end the training by pressing Ctrl + C in the terminal when the loss drops below zero. The maximum number of iterations are set to 300 thousand (and can be toggled by changing line 75 in train.py) but the model should get trained well before reaching 300 thousand iterations. The model assumes the text to be in question-response format so to make it more efficient, altering the chats such that your texts are a response to the other persons text would help the model extract a lot of information and train better. This altering of chat should be done before executing the runner_code.py file.
 
-In case the loss is fluctuating and not decreasing, hyper-parameter tuning can be done by altering the values in lines 71-74 in the train.py file.  
+In case the loss is fluctuating and not decreasing, hyper-parameter tuning can be done by altering the values in lines 71-74 in the train.py file.
+
+**Note:** If you're using PyTorch version greater than 1.0.0 then you might see 'masked_scatter' warnings but you can ignore these as it will not affect the process.  
 
 ## Start chatting!
 
