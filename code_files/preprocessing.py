@@ -67,6 +67,9 @@ class PreprocessChats:
             #remove end-to-end encryption message
             end_to_end = 'Messages to this chat and calls are now secured with end-to-end encryption. Tap for more info.'
             chat = chat.replace(end_to_end, '')
+            
+            #remove .txt from filename (i)
+            i = i.replace('.txt','')
 
             #remove media-omitted message
             media_omitted = i+': <Media omitted>'
@@ -108,7 +111,7 @@ class PreprocessChats:
             chat = emoji_pattern.sub(r'', chat) #no emoji
 
             #save the chats in processed_chats dir
-            new_file = open(self.master_folder+i, "w+")
+            new_file = open(self.master_folder+i+'txt', "w+")
             new_file.write(chat)
             new_file.close()
 
