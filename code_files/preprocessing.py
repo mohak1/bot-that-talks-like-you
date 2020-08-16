@@ -70,17 +70,26 @@ class PreprocessChats:
 
             #remove media-omitted message
             media_omitted = i+': <Media omitted>'
+            media_omitted_you = self.your_name+': <Media omitted>'
             chat = chat.replace(media_omitted, '')
+            chat = chat.replace(media_omitted_you, '')
             
             #remove deleted message
             deleted = i+': This message was deleted'
+            deleted_you = self.your_name+': You deleted this message'
             chat = chat.replace(deleted, '')
+            chat = chat.replace(deleted_you, '')
+            print(deleted)
 
             #missed video/voice call
             missed_video = i+': Missed video call'
+            missed_video_you = self.your_name+': Missed video call'
             missed_voice = i+': Missed voice call'
+            missed_voice_you = self.your_name+': Missed voice call'
             chat = chat.replace(missed_voice, '')
+            chat = chat.replace(missed_voice_you, '')
             chat = chat.replace(missed_video, '')
+            chat = chat.replace(missed_video_you, '')
 
             #remove emogis
             emoji_pattern = re.compile("["
