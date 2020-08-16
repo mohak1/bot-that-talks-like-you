@@ -49,8 +49,8 @@ process = PreprocessChats(CHAT_FOLDER, MASTER_FOLDER, YOUR_NAME, MAX_LENGTH)
 if len(os.listdir(MASTER_FOLDER))<2:
     #the folder is empty, chats have not been processed
     process.chat_rename()
-    process.remove_auto_messages()
 
+process.remove_auto_messages()
 pairs = process.create_pairs()
 
 #saving the formatted pairs
