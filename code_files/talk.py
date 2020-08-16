@@ -16,6 +16,8 @@ LOAD_MODEL_PATH = 'path_to_repository/whatsapp_bot/'
 l = os.listdir(LOAD_MODEL_PATH)
 recent = 0
 for i in l:
+    if '_checkpoint.tar' not in i:
+        continue
     i = i.strip('_checkpoint.tar')
     if int(i)>int(recent):
         recent = i
