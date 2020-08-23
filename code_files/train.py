@@ -70,7 +70,7 @@ def start_training(voc, trimmed_pairs, save_dir, load_model_path=None):
     # Configure training/optimization
     clip = 50.0
     teacher_forcing_ratio = 0.5
-    learning_rate = 0.00000001
+    learning_rate = 0.00001
     decoder_learning_ratio = 5.0
     n_iteration = 1200000
     print_every = 200
