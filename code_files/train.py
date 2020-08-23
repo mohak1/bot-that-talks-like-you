@@ -92,12 +92,12 @@ def start_training(voc, trimmed_pairs, save_dir, load_model_path=None):
     for state in encoder_optimizer.state.values():
         for k, v in state.items():
             if isinstance(v, torch.Tensor):
-                state[k] = v.cuda()
+                state[k] = v.to(device)
 
     for state in decoder_optimizer.state.values():
         for k, v in state.items():
             if isinstance(v, torch.Tensor):
-                state[k] = v.cuda()
+                state[k] = v.to(device)
 
     # Run training iterations
     print("Starting Training!")
