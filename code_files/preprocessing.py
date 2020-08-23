@@ -82,8 +82,7 @@ class PreprocessChats:
             deleted_you = self.your_name+': You deleted this message'
             chat = chat.replace(deleted, '')
             chat = chat.replace(deleted_you, '')
-            print(deleted)
-
+            
             #missed video/voice call
             missed_video = i+': Missed video call'
             missed_video_you = self.your_name+': Missed video call'
