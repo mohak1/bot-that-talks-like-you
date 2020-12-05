@@ -83,3 +83,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## References
+A lot of help was taken from the following resources in the making of this project:
+
+CHATBOT TUTORIAL (https://pytorch.org/tutorials/beginner/chatbot_tutorial.html)
+
+Applied Deep Learning: Build a Chatbot - Theory, Application (https://www.udemy.com/course/applied-deep-learning-build-a-chatbot-theory-application/learn/lecture/12336656?start=0#overview)
